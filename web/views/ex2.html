@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>파일 목록 관리</title>
+<style>
+	html, body {margin: 0; padding: 0;}
+	section, div.body {width: 50%; margin: 10px 25%;}
+	form:after {display: table; content: ""; clear: both;}
+	form input {float: left;}
+	input.input {width: calc(80% - 20px); padding: 10px; border: 0; background-color: #cff54e; font-weight: bold; font-size: 1.3rem;}
+	input.submit {width: calc(20% - 5px); margin: 0 0 0 5px; padding: 6px 0; font-weight: bold; font-size: 1.3rem; box-sizing: border-box; cursor: pointer;}
+	input.submit:focus {outline: none;}
+	ul {list-style-type: none; padding-left: 0;}
+	div.body li {width: 100%; padding: 30px 0; text-align: center; border-bottom: 1px solid black; box-sizing: border-box;}
+	div.body li:hover {background-color: #eef54e; font-weight: bold; cursor: pointer;}
+</style>
+</head>
+<body>
+	<section>
+		<form>
+			<input type="text" name="result" class="input" placeholder="키워드를 입력하세요.">
+			<input type="submit" value="검색" class="submit">
+		</form>
+	</section>
+</body>
+</html>

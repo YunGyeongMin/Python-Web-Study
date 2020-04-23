@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>작성</title>
+<link rel="stylesheet" href="/css/detail.css">
+<script src="/js/write.js"></script>
+</head>
+<body>
+	<section>
+        <h1 class="header">게시판</h1>
+        <div class="contents">
+            <form action="/write.py" method="get"  name="text">
+                <input id="title"type="text" name="title" placeholder="제목을 입력하세요." value="">
+                <textarea rows="5" cols="5" name="content" placeholder="내용을 입력하세요." id="content"></textarea>
+            </form>
+        </div>
+        <div class="buttons">
+            <button type="button">취소</button>
+            <button id ="write" type="button" onclick="submit();">작성</button>
+        </div>
+    </section>
+</body>
+</html>
